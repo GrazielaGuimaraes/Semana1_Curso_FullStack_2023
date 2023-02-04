@@ -1,0 +1,193 @@
+/*Resetando navegador*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    /*Rolagem suave*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+}
+
+
+/*header*/
+header {
+    
+   
+    display: flex; /*elementos lado a lado*/
+    justify-content: center; /*centraliza os elementos*/
+} 
+
+
+
+
+header .menu{
+    
+    list-style: none; /*Tira os estilos da lista não ordenada*/
+    display: flex;
+}
+
+header .menu li {
+    
+    padding: 24px; /*espaçamento interno do elemento*/
+}
+
+header .menu li a {
+    
+    text-decoration: none; /*tira o traçado do link*/
+    color: gray;
+    font-size: 18px;
+    transition: 0.4s; /*tempo da alteração da cor ao colocar o mouse*/
+
+}
+
+header .menu li a:hover {  /*ao colocar o mouse no link*/
+    
+    color: darkslateblue;
+}
+
+
+/*section*/
+#ingredientes, #preparo, #participantes {
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 15px;
+}
+
+#ingredientes, #preparo a {
+    
+    color: gray;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/*section apenas com uma imagem de fundo*/
+#imagem {
+    
+    height: 100vh;
+    background: #ffffff url("https://oquetempracomer.com.br/wp-content/uploads/elementor/thumbs/receita-de-biscoito-de-natal-3-pwsmgqglf9jw05igf3ho6lsm1ho5uc70o9msri2hss.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+#preparo ol li {
+    
+    color: gray;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#participantes  {
+    height: 100vh;
+    background-color: gray;
+}
+
+#participantes h2 {
+    color: #fff;
+}
+
+
+h1, h2, h3 {
+    
+    color: darkslateblue;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#titulo {
+    
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 32px;
+    background-color: darkslateblue;
+    border-radius: 5px;
+}
+
+.lista-cards {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    
+    height: 100%;
+    width: 300px;
+    background-color: darkslateblue;
+    border-radius: 5px;
+    text-align: center;
+    color: grey;
+    padding: 15px;
+    margin: 15px;
+}
+
+.card img {
+    
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.card a i{
+    
+    margin-top: 18px;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+/*footer*/
+footer {
+    
+    height: 100%;
+    background-color: #000000;
+    color: darkslateblue;
+    text-align: center;
+    padding: 24px;
+    font-size: 18px;
+}
+
+#voltar {
+    
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    text-decoration: none;
+    border: 1px solid darkslateblue;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.4s;
+    font-size: 18px;
+}
+
+#voltar:hover {
+    
+    background-color: darkslateblue;
+    color: #fff;
+}
+
+
+
+
+
+
+
